@@ -13,7 +13,8 @@
 		<div class="socials">
 			<div class="socialmedia twitter"><a href="https://twitter.com/euterpiaradio">Twitter</a></div>
 			<div class="socialmedia facebook"><a href="https://www.facebook.com/euterpiaradio">Facebook</a></div>
-			<div class="socialmedia feed"><a href="<?php get_site_url() ; ?>/category/euterpia-radio/feed/">Podcast Feed</a></div>
+			<div class="socialmedia feed"><a href="<?php get_site_url(); ?>/category/euterpia-radio/feed/">Podcast
+					Feed</a></div>
 		</div>
 	</div>
 </div>

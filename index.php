@@ -5,7 +5,7 @@ get_header();
 		<?php
 		if ( is_home() && ! is_paged() ) {
 			$featuredPost = new WP_Query();
-			$featuredPost->query('showposts=1');
+			$featuredPost->query( 'showposts=1' );
 			$featuredPost->the_post();
 			get_template_part( 'single_top' );
 		}
@@ -16,12 +16,12 @@ get_header();
 			while ( have_posts() ) : the_post(); ?>
 				<article class="previous-post">
 					<div class="the-thumbnail">
-						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( [ 300, 170 ] ); ?></a>
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array( 300, 170 ) ); ?></a>
 						<div class="the-date">
 							<?php echo get_the_date(); ?>
 						</div>
 						<div class="the-thumbnail-title"><?php $title = get_post( get_post_thumbnail_id() )->post_title;
-							echo ($title != '' ? $title : the_title()); ?></div>
+							echo( $title != '' ? $title : the_title() ); ?></div>
 					</div>
 					<div class="the-title">
 						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>

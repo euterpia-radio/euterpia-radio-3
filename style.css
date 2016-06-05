@@ -1,0 +1,709 @@
+/*
+Theme Name: Euterpia Radio
+Theme URI: https://github.com/euterpia-radio/euterpia-radio-3
+Author: Euterpia Radio
+Author URI: http://www.euterpia-radio.fr/
+Description: Theme for Euterpia Radio
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: er
+GitHub Theme URI: https://github.com/euterpia-radio/euterpia-radio-3
+GitHub Branch: master
+*/
+
+@import url(fonts/ubuntu.css);
+@import url(fonts/lato.css);
+
+/**
+ * 1.0 - Reset
+ *
+ * Resetting and rebuilding styles have been helped along thanks to the fine
+ * work of Eric Meyer, Nicolas Gallagher, Jonathan Neal, and Blueprint.
+ */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    background: #f1f1f1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption,
+th,
+td {
+    font-weight: normal;
+    text-align: left;
+}
+
+fieldset {
+    min-width: inherit;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote,
+q {
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    quotes: none;
+}
+
+a:focus {
+    outline: 2px solid #c1c1c1;
+    outline: 2px solid rgba(51, 51, 51, 0.3);
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+a img {
+    border: 0;
+}
+
+/* Custom */
+
+body {
+    font-family: 'Ubuntu', 'sans-serif';
+}
+
+.top-bar {
+    background-color: #ff0000;
+    line-height: 70px;
+    height: 70px;
+}
+
+.inner-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+.socials {
+    float: right;
+}
+
+.socialmedia {
+    display: inline-block;
+    text-align: center;
+    color: #FFFFFF;;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.socialmedia a:hover {
+    background-color: #FFFFFF;
+    color: #ff0000;
+}
+
+.top-title {
+    font-size: 82px;
+    font-weight: 700;
+}
+
+.top-title .inner-wrapper {
+    background-color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.top-title .title {
+    display: inline-block;
+    color: #FF0000;
+    position: relative;
+    padding-right: 0.5em;
+    padding-left: 20px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+}
+
+.swissflag {
+    background-color: #FF0000;
+    width: 0.5em;
+    height: 0.5em;
+    position: absolute;
+    right: 0;
+    top: .15em;
+}
+
+.swissflag::after {
+    content: "";
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 18%;
+    bottom: 18%;
+    left: 40%;
+    width: 20%;
+}
+
+.swissflag::before {
+    content: "";
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    right: 18%;
+    height: 20%;
+}
+
+.top-menu > .inner-wrapper {
+    background-color: #3C3C3C;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.top-menu ul.menu {
+}
+
+.top-menu ul.menu li {
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.top-menu ul.menu li a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    color: #FFFFFF;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.top-menu ul.menu li a:hover {
+    background-color: #FF0000;
+    color: #FFFFFF;
+}
+
+.top-menu ul.menu li.current-menu-item a {
+    color: #FF0000;
+}
+
+.top-menu ul.menu li.current-menu-item a:hover {
+    color: #FFFFFF;
+}
+
+.main-pannel > .inner-wrapper {
+    padding: 20px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: stretch;
+}
+
+.main {
+    width: 620px;
+}
+
+article.featured {
+    position: relative;
+}
+
+article.featured a,
+article.previous-post a{
+    color: inherit;
+    text-decoration: none;
+}
+
+article.featured .the-thumbnail {
+    position: relative;
+    height: 350px;
+    background-image: url('no-image.png');
+    background-size: 630px 350px;
+}
+
+article.featured .the-thumbnail .the-title {
+    font-size: 22px;
+    color: #FFFFFF;
+    background-color: #3C3C3C;
+    display: inline-block;
+    position: absolute;
+    bottom: 52px;
+    left: 0;
+    padding: 10px 20px;
+}
+
+article.featured .the-thumbnail .the-date {
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #FF0000;
+    position: absolute;
+    left: 0;
+    bottom: 26px;
+    padding: 5px 20px;
+}
+
+article.featured .the-thumbnail .the-thumbnail-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #3C3C3C;
+    position: absolute;
+    right: 0;
+    bottom: 26px;
+    padding: 5px 20px;
+}
+
+article.featured .body {
+    font-size: 14px;
+    font-family: 'Lato', 'sans-serif';
+    font-weight: 300;
+}
+
+article.featured .body p {
+    margin: 10px 0;
+}
+
+article.featured .body a {
+    color: #FF0000;
+    font-weight: 700;
+}
+
+article.featured .body a:hover {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    padding: 3px;
+    margin: -3px;
+}
+
+article.featured .body ul {
+    list-style: initial;
+}
+
+article.featured .body ul li {
+    margin: 0 30px;
+}
+
+.section-title {
+    background-color: #3C3C3C;
+    height: 60px;
+    line-height: 60px;
+    color: #FFFFFF;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+.home .section-title {
+    margin: 20px 0;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10px;
+    background-color: #FF0000;
+}
+
+.previous-posts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article.previous-post {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+article.previous-post:nth-child(odd) {
+    margin-right: 20px;
+}
+
+article.previous-post .the-thumbnail {
+    position: relative;
+    width: 300px;
+    height: 170px;
+    background-image: url('no-image.png');
+    background-size: 300px 170px;
+}
+
+article.previous-post .the-thumbnail img {
+    width: 300px;
+    height: 170px;
+}
+
+article.previous-post .the-date {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px;
+    color: #FFFFFF;
+    background-color: #FF0000;
+    display: inline-block;
+}
+
+article.previous-post .the-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+article.previous-post .the-title a:hover {
+    color: #FFFFFF;
+    background-color: #FF0000;
+    padding: 3px;
+    margin: -3px;
+}
+
+article.previous-post .the-excerpt {
+    font-family: 'Lato', 'sans-serif';
+    font-weight: 300;
+    font-size: 14px;
+    text-align: justify;
+}
+
+article.previous-post .the-thumbnail-title {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px;
+    color: #FFFFFF;
+    background-color: #3C3C3C;
+    display: inline-block;
+}
+
+h3#comments {
+    border-top: 1px solid #DDDDDD;
+    margin-top: 1em;
+    padding-top: 1em;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+div#respond {
+    border-top: 1px solid #DDDDDD;
+    margin-top: 1em;
+    padding-top: 1em;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+div#respond a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+div#respond a:hover {
+    color: #FF0000;
+}
+
+ol.commentlist * {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+
+ol.commentlist li.comment {
+    margin-top: 1em;
+}
+
+ol.commentlist li.comment div.comment-meta {
+    margin-bottom: 1em;
+}
+
+ol.commentlist li.comment div.comment-meta * {
+    font-size: smaller;
+}
+
+ol.commentlist li.comment div.comment-meta a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ol.commentlist li.comment div.comment-meta a:hover {
+    color: #FF0000;
+}
+
+ol.commentlist div.comment-author {
+    font-weight: 700;
+}
+
+div#respond p {
+    margin-top: 1em;
+}
+
+div#respond label {
+    display: block;
+    padding-bottom: 0.5em;
+}
+
+div#respond #reply-title {
+    font-weight: 700;
+}
+
+div#respond * {
+    width: 100%;
+}
+
+div#respond input,
+div#respond textarea {
+    border: 1px solid #A9A9A9;
+    padding: 0.5em;
+}
+
+div#respond input:focus,
+div#respond textarea:focus {
+    outline: none;
+    border-color: #337AB7;
+    box-shadow: 0 0 5px 0 #337AB7;
+}
+
+div#respond input#submit {
+    padding: 1em;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #337AB7;
+}
+
+nav.pagination {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+nav.pagination h2 {
+    display: none;
+}
+
+nav.pagination div.nav-links span.meta-nav {
+    display: none;
+}
+
+nav.pagination div.nav-links .page-numbers {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #636363;
+    color: #FFFFFF;
+}
+
+nav.pagination div.nav-links a.page-numbers {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+nav.pagination div.nav-links .current {
+    background-color: #FF0000;
+}
+
+.footer-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 10em;
+}
+
+.footer-wrapper .the-footer {
+    background-color: #3C3C3C;
+}
+
+.footer-wrapper .the-license {
+    background-color: #333333;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+.footer-wrapper .the-license img {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-wrapper .the-license a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-wrapper .the-license a:hover {
+    color: #FF0000;
+}
+
+.footer-wrapper .the-license div {
+    margin-top: 1em;
+}
+
+.side-bar {
+    width: 320px;
+    margin-left: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+}
+
+.side-bar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.side-bar .a-widget:first-child .a-widget-title {
+    margin-top: 0;
+}
+
+.side-bar .a-widget .a-widget-title {
+    background-color: #3C3C3C;
+    height: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 20px 0 10px 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+.side-bar .a-widget .a-widget-title:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10px;
+    background-color: #FF0000;
+}
+
+form.searchform div {
+    position: relative;
+    height: 27px;
+    display: block;
+}
+
+form.searchform label {
+    display: none;
+}
+
+form.searchform input#s {
+    border: 1px solid #bbbbbb;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    padding-right: 86px;
+}
+
+form.searchform input#s:focus {
+    outline: none;
+    border-color: #337AB7;
+    box-shadow: 0 0 5px 0 #337AB7;
+}
+
+form.searchform input#searchsubmit {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    padding: 5px;
+    width: 80px;
+    border: none;
+}
+
+form.searchform input#searchsubmit:hover {
+    color: #FFFFFF;
+    background-color: #FF0000;
+    cursor: pointer;
+}
+
+form.searchform input#searchsubmit:focus {
+    outline: none;
+}
+
+.side-bar .tagcloud a {
+    display: inline-block;
+    padding: 2px;
+}
+
+.side-bar .tagcloud a:hover {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    padding: 5px;
+    margin: -3px;
+    display: inline-block;
+}
+
+.side-bar .a-widget ul {
+    list-style: square;
+    padding: 0 30px;
+}
